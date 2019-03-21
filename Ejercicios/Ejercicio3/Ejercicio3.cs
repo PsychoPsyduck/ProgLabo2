@@ -10,20 +10,18 @@ namespace Ejercicio3
     {
         static void Main(string[] args)
         {
-            int flag = 0;
             Console.WriteLine("Ingrese un numero");
             int num = Convert.ToInt32(Console.ReadLine());
-            int e = 0;
+            int cont = 0;
 
             for (int i = 0; i < num; i++)
             {
-                while (flag == 0)
+                for (int j = 0; j < i; j++)
                 {
-                    int numAux = num % i;
-                    if(numAux == 0)
-                        e++;
-                    if (e == 3)
-                        flag = 1;
+                    if (i % 2 == 0)
+                    {
+                        cont++;
+                    }
                 }
 
             }

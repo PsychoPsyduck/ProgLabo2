@@ -11,23 +11,25 @@ namespace Ejercicio4
         static void Main(string[] args)
         {
             int cant = 0;
-            int suma = 0;
-            int n = 2; 
+            int n = 1; 
 
             Console.WriteLine("Primeros 4 numero perfectos: ");
 
             do
             {
-                for(int i = 0; i < n; i++ )
+                int suma = 0;
+                for (int i = 1; i < n; i++ )
                 {
-                    suma += i;
+                    if(n % i == 0)
+                        suma = suma + i;
                     if(suma == n)
                     {
                         Console.WriteLine("{0} ", n);
-                        n++;
                         cant++;
+                        break;
                     }
                 }
+                n++;
             } while (cant < 4);
 
             Console.ReadKey();
