@@ -5,3 +5,10 @@ D:\ProgLabo2\ProgLabo2\Ejercicios\Ejercicio3\obj\Debug\Ejercicio3.csproj.CoreCom
 D:\ProgLabo2\ProgLabo2\Ejercicios\Ejercicio3\obj\Debug\Ejercicio3.exe
 D:\ProgLabo2\ProgLabo2\Ejercicios\Ejercicio3\obj\Debug\Ejercicio3.pdb
 D:\ProgLabo2\ProgLabo2\Ejercicios\Ejercicio3\obj\Debug\Ejercicio3.csprojAssemblyReference.cache
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio3\bin\Debug\Ejercicio3.exe.config
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio3\bin\Debug\Ejercicio3.exe
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio3\bin\Debug\Ejercicio3.pdb
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio3\obj\Debug\Ejercicio3.csprojAssemblyReference.cache
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio3\obj\Debug\Ejercicio3.csproj.CoreCompileInputs.cache
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio3\obj\Debug\Ejercicio3.exe
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio3\obj\Debug\Ejercicio3.pdb

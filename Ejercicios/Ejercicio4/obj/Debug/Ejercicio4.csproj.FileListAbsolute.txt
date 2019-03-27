@@ -4,3 +4,10 @@ D:\ProgLabo2\ProgLabo2\Ejercicios\Ejercicio4\bin\Debug\Ejercicio4.pdb
 D:\ProgLabo2\ProgLabo2\Ejercicios\Ejercicio4\obj\Debug\Ejercicio4.csproj.CoreCompileInputs.cache
 D:\ProgLabo2\ProgLabo2\Ejercicios\Ejercicio4\obj\Debug\Ejercicio4.exe
 D:\ProgLabo2\ProgLabo2\Ejercicios\Ejercicio4\obj\Debug\Ejercicio4.pdb
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio4\bin\Debug\Ejercicio4.exe.config
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio4\bin\Debug\Ejercicio4.exe
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio4\bin\Debug\Ejercicio4.pdb
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio4\obj\Debug\Ejercicio4.csprojAssemblyReference.cache
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio4\obj\Debug\Ejercicio4.csproj.CoreCompileInputs.cache
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio4\obj\Debug\Ejercicio4.exe
+C:\Users\fvg71\Documents\ProgLabo2\Ejercicios\Ejercicio4\obj\Debug\Ejercicio4.pdb

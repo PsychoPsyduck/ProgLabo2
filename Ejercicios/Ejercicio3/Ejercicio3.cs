@@ -12,16 +12,22 @@ namespace Ejercicio3
         {
             Console.WriteLine("Ingrese un numero");
             int num = Convert.ToInt32(Console.ReadLine());
-            int cont = 0;
+            
 
-            for (int i = 0; i < num; i++)
+            for (int i = 1; i < num; i++)
             {
-                for (int j = 0; j < i; j++)
+                int flag = 0;
+                for (int j = 2; j < i/2; j++)
                 {
-                    if (i % 2 == 0)
+                    if (i % j == 0)
                     {
-                        cont++;
+                        flag = 1;
+                        break;
                     }
+                }
+                if(flag == 0)
+                {
+                    Console.Write("{0} ",i);
                 }
 
             }
