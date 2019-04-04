@@ -18,6 +18,7 @@ namespace Ejercicio16_18
             Console.WriteLine(gatito.Mostrar());
 
             Console.ReadKey();
+            Console.WriteLine("\n---------------------------------------\n");
 
             Alumno tuca = new Alumno();
             tuca.nombre = "Chinchilla";
@@ -27,6 +28,7 @@ namespace Ejercicio16_18
             Console.WriteLine(tuca.Mostrar());
 
             Console.ReadKey();
+            Console.WriteLine("\n---------------------------------------\n");
 
             Alumno lucy = new Alumno();
             lucy.nombre = "Gatita";

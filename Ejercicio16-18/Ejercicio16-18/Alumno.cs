@@ -19,8 +19,8 @@ namespace Ejercicio16_18
         {
             if(nota1 >= 4 && nota2 >= 4)
             {
-                Random rand = new Random(1);
-                notaFinal = rand.Next();
+                Random rand = new Random();
+                notaFinal = rand.Next(4, 10);
             }
             else
             {
@@ -39,7 +39,7 @@ namespace Ejercicio16_18
             StringBuilder retorno = new StringBuilder();
             retorno.AppendFormat("Alumno: {0}, {1}\n", apellido, nombre);
             retorno.AppendFormat("Legajo: {0}\n", legajo);
-            retorno.AppendFormat("Nota 1: {0} y nota 2: {1}\n", nota1, nota2);
+            retorno.AppendFormat("Nota1: {0} y nota2: {1}\n", nota1, nota2);
 
             CalcularFinal();
             if (notaFinal >= 4)
