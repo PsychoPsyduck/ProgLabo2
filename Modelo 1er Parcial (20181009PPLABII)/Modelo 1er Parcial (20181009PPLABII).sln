@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{54AF1865-C432-4693-8D58-D27E2326C26C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistaConsola", "VistaConsola\VistaConsola.csproj", "{E3D72470-4134-435D-B261-EBF6639F1CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistaForm", "VistaForm\VistaForm.csproj", "{FBC39F12-18A8-4BA3-A27B-BB881B9D8AAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54AF1865-C432-4693-8D58-D27E2326C26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AF1865-C432-4693-8D58-D27E2326C26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AF1865-C432-4693-8D58-D27E2326C26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AF1865-C432-4693-8D58-D27E2326C26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D72470-4134-435D-B261-EBF6639F1CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D72470-4134-435D-B261-EBF6639F1CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D72470-4134-435D-B261-EBF6639F1CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D72470-4134-435D-B261-EBF6639F1CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC39F12-18A8-4BA3-A27B-BB881B9D8AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC39F12-18A8-4BA3-A27B-BB881B9D8AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC39F12-18A8-4BA3-A27B-BB881B9D8AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC39F12-18A8-4BA3-A27B-BB881B9D8AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5B29198-F97B-489F-B971-60F4FC0F6F5C}
+	EndGlobalSection
+EndGlobal
