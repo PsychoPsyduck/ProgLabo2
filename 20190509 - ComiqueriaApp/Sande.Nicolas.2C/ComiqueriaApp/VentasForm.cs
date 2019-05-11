@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComiqueriaLogic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,19 @@ namespace ComiqueriaApp
 {
     public partial class VentasForm : Form
     {
-        public VentasForm()
+        private Producto producto;
+        private Comiqueria comiqueria;
+
+        public VentasForm(Producto producto, Comiqueria comiqueria)
         {
             InitializeComponent();
+            this.producto = producto;
+            this.comiqueria = comiqueria;
+            lblCantidad.Text = "Cantidad:";
+            lblDescripcion.Text = producto.Descripcion;
+
+            StringBuilder sb = new StringBuilder();
+            lblPrecioFinal.Text = sb.AppendFormat("Precio Final: ${0}", producto.Precio).ToString();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -24,17 +35,21 @@ namespace ComiqueriaApp
 
         private void btnVender_Click(object sender, EventArgs e)
         {
-            ComiqueriaLogic.Producto p;
-            if(numericUpDownCantidad.Value > 0)
+            if(numericUpDownCantidad.Value > producto.Stock)
             {
-                MessageBox.Show("Supero el limite", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Supero el stock disponible.\nDisminuya la cantidad a vender.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                ComiqueriaLogic.Venta v;
+                comiqueria.Vender(producto, (int)numericUpDownCantidad.Value);
                 DialogResult = DialogResult.OK;
-                Close();
             }
+        }
+
+        private void numericUpDownCantidad_ValueChanged(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            lblPrecioFinal.Text = sb.AppendFormat("Precio Final: ${0}", producto.Precio * (int)numericUpDownCantidad.Value).ToString();
         }
     }
 }

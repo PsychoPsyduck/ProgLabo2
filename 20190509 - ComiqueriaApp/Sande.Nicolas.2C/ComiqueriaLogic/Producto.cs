@@ -28,7 +28,7 @@ namespace ComiqueriaLogic
             retorno.AppendFormat("Descripcion: {0}\n", Descripcion);
             retorno.AppendFormat("Codigo: {0}\n", codigo);
             retorno.AppendFormat("Precio: {0}\n", Precio);
-            retorno.AppendFormat("Stock: {0}\n\n", Stock);
+            retorno.AppendFormat("Stock: {0}", Stock);
 
             return retorno.ToString();
         }

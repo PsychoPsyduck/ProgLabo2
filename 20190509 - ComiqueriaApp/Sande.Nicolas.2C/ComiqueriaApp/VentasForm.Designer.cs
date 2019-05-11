@@ -39,54 +39,61 @@
             // 
             // lblDescripcion
             // 
+            this.lblDescripcion.AutoEllipsis = true;
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(23, 29);
+            this.lblDescripcion.Location = new System.Drawing.Point(31, 36);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(41, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(52, 17);
             this.lblDescripcion.TabIndex = 0;
             this.lblDescripcion.Text = "label1";
             // 
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(23, 60);
+            this.lblCantidad.Location = new System.Drawing.Point(31, 74);
+            this.lblCantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(52, 13);
+            this.lblCantidad.Size = new System.Drawing.Size(68, 17);
             this.lblCantidad.TabIndex = 1;
             this.lblCantidad.Text = "Cantidad:";
             // 
             // numericUpDownCantidad
             // 
-            this.numericUpDownCantidad.Location = new System.Drawing.Point(26, 76);
+            this.numericUpDownCantidad.Location = new System.Drawing.Point(35, 94);
+            this.numericUpDownCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownCantidad.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDownCantidad.Name = "numericUpDownCantidad";
-            this.numericUpDownCantidad.Size = new System.Drawing.Size(111, 20);
+            this.numericUpDownCantidad.Size = new System.Drawing.Size(148, 22);
             this.numericUpDownCantidad.TabIndex = 2;
             this.numericUpDownCantidad.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            this.numericUpDownCantidad.ValueChanged += new System.EventHandler(this.numericUpDownCantidad_ValueChanged);
             // 
             // lblPrecioFinal
             // 
             this.lblPrecioFinal.AutoSize = true;
-            this.lblPrecioFinal.Location = new System.Drawing.Point(182, 83);
+            this.lblPrecioFinal.Location = new System.Drawing.Point(243, 102);
+            this.lblPrecioFinal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecioFinal.Name = "lblPrecioFinal";
-            this.lblPrecioFinal.Size = new System.Drawing.Size(35, 13);
+            this.lblPrecioFinal.Size = new System.Drawing.Size(46, 17);
             this.lblPrecioFinal.TabIndex = 3;
             this.lblPrecioFinal.Text = "label1";
             // 
             // btnVender
             // 
-            this.btnVender.Location = new System.Drawing.Point(26, 120);
+            this.btnVender.Location = new System.Drawing.Point(35, 148);
+            this.btnVender.Margin = new System.Windows.Forms.Padding(4);
             this.btnVender.Name = "btnVender";
-            this.btnVender.Size = new System.Drawing.Size(111, 23);
+            this.btnVender.Size = new System.Drawing.Size(148, 28);
             this.btnVender.TabIndex = 4;
             this.btnVender.Text = "Vender";
             this.btnVender.UseVisualStyleBackColor = true;
@@ -94,9 +101,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(172, 120);
+            this.btnCancelar.Location = new System.Drawing.Point(229, 148);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(111, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(148, 28);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -104,15 +112,16 @@
             // 
             // VentasForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 168);
+            this.ClientSize = new System.Drawing.Size(412, 207);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnVender);
             this.Controls.Add(this.lblPrecioFinal);
             this.Controls.Add(this.numericUpDownCantidad);
             this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.lblDescripcion);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VentasForm";
             this.Text = "Nueva Venta";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCantidad)).EndInit();

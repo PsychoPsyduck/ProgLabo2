@@ -19,13 +19,21 @@ namespace ComiqueriaLogic
 
         public Dictionary<Guid, string> ListarProductos()
         {
-            return null;
+            Dictionary<Guid, string> retorno = new Dictionary<Guid, string>();
+            foreach (Producto p in productos)
+            {
+                retorno.Add((Guid)p, p.Descripcion);
+            }
+            return retorno;
         }
 
         public string ListarVentas()
         {
             StringBuilder retorno = new StringBuilder();
-            foreach (Venta v in ventas)
+
+            List<Venta> listaRetorno = ventas.OrderByDescending(v => v.Fecha).ToList();
+
+            foreach (Venta v in listaRetorno)
             {
                 retorno.AppendLine(v.ObtenerDescripcionBreve());
             }
@@ -53,7 +61,7 @@ namespace ComiqueriaLogic
         {
             foreach (Producto p in comiqueria.productos)
             {
-                if (p == producto)
+                if (p.Descripcion == producto.Descripcion)
                     return true;
             }
             return false;

@@ -44,44 +44,52 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxProductos.FormattingEnabled = true;
-            this.listBoxProductos.Location = new System.Drawing.Point(13, 43);
+            this.listBoxProductos.ItemHeight = 16;
+            this.listBoxProductos.Location = new System.Drawing.Point(17, 53);
+            this.listBoxProductos.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxProductos.Name = "listBoxProductos";
-            this.listBoxProductos.Size = new System.Drawing.Size(426, 225);
+            this.listBoxProductos.Size = new System.Drawing.Size(567, 276);
             this.listBoxProductos.TabIndex = 0;
             this.listBoxProductos.SelectedIndexChanged += new System.EventHandler(this.ListBoxProductos_SelectedIndexChanged);
             // 
             // richTextBoxVentas
             // 
-            this.richTextBoxVentas.Location = new System.Drawing.Point(13, 290);
+            this.richTextBoxVentas.Location = new System.Drawing.Point(17, 357);
+            this.richTextBoxVentas.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxVentas.Name = "richTextBoxVentas";
-            this.richTextBoxVentas.Size = new System.Drawing.Size(746, 128);
+            this.richTextBoxVentas.Size = new System.Drawing.Size(993, 157);
             this.richTextBoxVentas.TabIndex = 1;
             this.richTextBoxVentas.Text = "";
             // 
             // groupBoxAcciones
             // 
             this.groupBoxAcciones.Controls.Add(this.btnVender);
-            this.groupBoxAcciones.Location = new System.Drawing.Point(448, 30);
+            this.groupBoxAcciones.Location = new System.Drawing.Point(597, 37);
+            this.groupBoxAcciones.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAcciones.Name = "groupBoxAcciones";
-            this.groupBoxAcciones.Size = new System.Drawing.Size(311, 97);
+            this.groupBoxAcciones.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxAcciones.Size = new System.Drawing.Size(415, 119);
             this.groupBoxAcciones.TabIndex = 2;
             this.groupBoxAcciones.TabStop = false;
             this.groupBoxAcciones.Text = "Acciones";
             // 
             // btnVender
             // 
-            this.btnVender.Location = new System.Drawing.Point(20, 34);
+            this.btnVender.Location = new System.Drawing.Point(27, 42);
+            this.btnVender.Margin = new System.Windows.Forms.Padding(4);
             this.btnVender.Name = "btnVender";
-            this.btnVender.Size = new System.Drawing.Size(75, 23);
+            this.btnVender.Size = new System.Drawing.Size(100, 28);
             this.btnVender.TabIndex = 0;
             this.btnVender.Text = "Vender";
             this.btnVender.UseVisualStyleBackColor = true;
+            this.btnVender.Click += new System.EventHandler(this.OnVenderClick);
             // 
             // richTextBoxDetalle
             // 
-            this.richTextBoxDetalle.Location = new System.Drawing.Point(448, 133);
+            this.richTextBoxDetalle.Location = new System.Drawing.Point(597, 164);
+            this.richTextBoxDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDetalle.Name = "richTextBoxDetalle";
-            this.richTextBoxDetalle.Size = new System.Drawing.Size(311, 135);
+            this.richTextBoxDetalle.Size = new System.Drawing.Size(413, 165);
             this.richTextBoxDetalle.TabIndex = 3;
             this.richTextBoxDetalle.Text = "";
             // 
@@ -89,9 +97,10 @@
             // 
             this.lblVentas.AutoSize = true;
             this.lblVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVentas.Location = new System.Drawing.Point(12, 274);
+            this.lblVentas.Location = new System.Drawing.Point(16, 337);
+            this.lblVentas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVentas.Name = "lblVentas";
-            this.lblVentas.Size = new System.Drawing.Size(103, 13);
+            this.lblVentas.Size = new System.Drawing.Size(131, 17);
             this.lblVentas.TabIndex = 4;
             this.lblVentas.Text = "Lista de Ventas: ";
             // 
@@ -99,17 +108,18 @@
             // 
             this.lblProductos.AutoSize = true;
             this.lblProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductos.Location = new System.Drawing.Point(12, 27);
+            this.lblProductos.Location = new System.Drawing.Point(16, 33);
+            this.lblProductos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProductos.Name = "lblProductos";
-            this.lblProductos.Size = new System.Drawing.Size(117, 13);
+            this.lblProductos.Size = new System.Drawing.Size(149, 17);
             this.lblProductos.TabIndex = 5;
             this.lblProductos.Text = "Lista de Productos:";
             // 
             // PrincipalForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 430);
+            this.ClientSize = new System.Drawing.Size(1028, 529);
             this.Controls.Add(this.lblProductos);
             this.Controls.Add(this.lblVentas);
             this.Controls.Add(this.richTextBoxDetalle);
@@ -117,6 +127,7 @@
             this.Controls.Add(this.richTextBoxVentas);
             this.Controls.Add(this.listBoxProductos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PrincipalForm";

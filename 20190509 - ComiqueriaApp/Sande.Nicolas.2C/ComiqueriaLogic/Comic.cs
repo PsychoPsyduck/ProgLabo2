@@ -29,7 +29,7 @@ namespace ComiqueriaLogic
             retorno.AppendLine(base.ToString());
             retorno.AppendLine("    --COMIC--");
             retorno.AppendFormat("Autor: {0}\n", autor);
-            retorno.AppendFormat("Tipo Comic: {0}\n\n", tipoComic);
+            retorno.AppendFormat("Tipo Comic: {0}", tipoComic);
 
             return retorno.ToString();
         }

@@ -25,7 +25,7 @@ namespace ComiqueriaLogic
             StringBuilder retorno = new StringBuilder();
             retorno.AppendLine(base.ToString());
             retorno.AppendLine("    --Figura--");
-            retorno.AppendFormat("Altura: {0}\n\n", altura);
+            retorno.AppendFormat("Altura: {0}", altura);
 
             return retorno.ToString();
         }
