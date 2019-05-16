@@ -29,10 +29,18 @@ namespace CentralitaHerencia
             return retorno.ToString();
         }
 
-        public int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
+        public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
         {
-
-            return 0;
+            int retorno = -1;
+            if (llamada1.duracion > llamada2.duracion)
+            {
+                retorno = 1;
+            }
+            else if (llamada1.duracion < llamada2.duracion)
+            {
+                retorno = 0;
+            }
+            return retorno;
         }
 
         public float Duracion
@@ -43,27 +51,27 @@ namespace CentralitaHerencia
             }
         }
 
-        public float NroDestino
+        public string NroDestino
         {
             get
             {
-                return Convert.ToUInt32(nroDestino);
+                return nroDestino;
             }
         }
 
-        public float NroOrigen
+        public string NroOrigen
         {
             get
             {
-                return Convert.ToUInt32(nroOrigen);
+                return nroOrigen;
             }
         }
+    }
 
-        public enum TipoLlamada
-        {
-            Local,
-            Provincial,
-            Todas
-        }
+    public enum TipoLlamada
+    {
+        Local,
+        Provincial,
+        Todas
     }
 }
