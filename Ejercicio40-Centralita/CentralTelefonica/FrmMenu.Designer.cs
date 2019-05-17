@@ -1,6 +1,6 @@
 ﻿namespace CentralTelefonica
 {
-    partial class Form1
+    partial class FrmMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnGenerarLl = new System.Windows.Forms.Button();
+            this.btnFactTotal = new System.Windows.Forms.Button();
+            this.btnFacturacionLocal = new System.Windows.Forms.Button();
+            this.btnFacturacionProv = new System.Windows.Forms.Button();
+            this.Salir = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnGenerarLl
+            // 
+            this.btnGenerarLl.Location = new System.Drawing.Point(12, 24);
+            this.btnGenerarLl.Name = "btnGenerarLl";
+            this.btnGenerarLl.Size = new System.Drawing.Size(301, 55);
+            this.btnGenerarLl.TabIndex = 0;
+            this.btnGenerarLl.Text = "Generar Llamada";
+            this.btnGenerarLl.UseVisualStyleBackColor = true;
+            this.btnGenerarLl.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnFactTotal
+            // 
+            this.btnFactTotal.Location = new System.Drawing.Point(12, 85);
+            this.btnFactTotal.Name = "btnFactTotal";
+            this.btnFactTotal.Size = new System.Drawing.Size(301, 55);
+            this.btnFactTotal.TabIndex = 1;
+            this.btnFactTotal.Text = "Facturacion Total";
+            this.btnFactTotal.UseVisualStyleBackColor = true;
+            // 
+            // btnFacturacionLocal
+            // 
+            this.btnFacturacionLocal.Location = new System.Drawing.Point(12, 146);
+            this.btnFacturacionLocal.Name = "btnFacturacionLocal";
+            this.btnFacturacionLocal.Size = new System.Drawing.Size(301, 55);
+            this.btnFacturacionLocal.TabIndex = 2;
+            this.btnFacturacionLocal.Text = "Facturacion Local";
+            this.btnFacturacionLocal.UseVisualStyleBackColor = true;
+            // 
+            // btnFacturacionProv
+            // 
+            this.btnFacturacionProv.Location = new System.Drawing.Point(12, 207);
+            this.btnFacturacionProv.Name = "btnFacturacionProv";
+            this.btnFacturacionProv.Size = new System.Drawing.Size(301, 55);
+            this.btnFacturacionProv.TabIndex = 3;
+            this.btnFacturacionProv.Text = "Facturacion Provincial";
+            this.btnFacturacionProv.UseVisualStyleBackColor = true;
+            // 
+            // Salir
+            // 
+            this.Salir.Location = new System.Drawing.Point(12, 268);
+            this.Salir.Name = "Salir";
+            this.Salir.Size = new System.Drawing.Size(301, 55);
+            this.Salir.TabIndex = 4;
+            this.Salir.Text = "Salir";
+            this.Salir.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(325, 335);
+            this.Controls.Add(this.Salir);
+            this.Controls.Add(this.btnFacturacionProv);
+            this.Controls.Add(this.btnFacturacionLocal);
+            this.Controls.Add(this.btnFactTotal);
+            this.Controls.Add(this.btnGenerarLl);
+            this.Name = "Form1";
+            this.Text = "Central Telefonica";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnGenerarLl;
+        private System.Windows.Forms.Button btnFactTotal;
+        private System.Windows.Forms.Button btnFacturacionLocal;
+        private System.Windows.Forms.Button btnFacturacionProv;
+        private System.Windows.Forms.Button Salir;
     }
 }
