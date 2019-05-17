@@ -18,7 +18,7 @@ namespace ComiqueriaLogic
             porcentajelva = 21;
         }
 
-        public Venta(Producto producto, int cantidad)
+        internal Venta(Producto producto, int cantidad)
         {
             this.producto = producto;
             Vender(cantidad);
@@ -45,7 +45,7 @@ namespace ComiqueriaLogic
             return retorno.ToString();
         }
 
-        public DateTime Fecha
+        internal DateTime Fecha
         {
             get
             {

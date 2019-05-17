@@ -10,12 +10,12 @@ namespace ComiqueriaLogic
     {
         private double altura;
 
-        public Figura(int stock, double precio, double altura) : base("Figura " + altura + "cm", stock, precio)
+        public Figura(int stock, double precio, double altura) : this("Figura " + altura + "cm",stock, precio, altura)
         {
             this.altura = altura;
         }
 
-        public Figura(string descripcion, int stock, double precio, double altura) : base(descripcion, stock, precio)
+        public Figura(string descripcion, int stock, double precio, double altura) : base(descripcion,stock,precio)
         {
             this.altura = altura;
         }
