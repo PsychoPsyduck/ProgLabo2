@@ -12,7 +12,12 @@ namespace ComiqueriaLogic
         private string descripcion;
         private double precio;
         private int stock;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="descripcion"></param>
+        /// <param name="stock"></param>
+        /// <param name="precio"></param>
         protected Producto(string descripcion, int stock, double precio)
         {
             codigo = Guid.NewGuid();
@@ -20,7 +25,10 @@ namespace ComiqueriaLogic
             this.stock = stock;
             this.precio = precio;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder retorno = new StringBuilder();
@@ -32,12 +40,17 @@ namespace ComiqueriaLogic
 
             return retorno.ToString();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="p"></param>
         public static explicit operator Guid(Producto p)
         {
             return p.codigo;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public string Descripcion
         {
             get
@@ -45,15 +58,24 @@ namespace ComiqueriaLogic
                 return descripcion;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public double Precio
         {
             get
             {
                 return precio;
             }
+            set
+            {
+                if(value > 0)
+                    precio = value;
+            }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public int Stock
         {
             get

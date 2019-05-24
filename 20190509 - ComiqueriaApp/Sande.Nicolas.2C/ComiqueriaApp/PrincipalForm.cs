@@ -89,5 +89,11 @@ namespace ComiqueriaApp
                 this.richTextBoxVentas.Text = this.comiqueria.ListarVentas();
             }
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Form modificarProductoForm = new ModificarProductoForm(productoSeleccionado);
+            modificarProductoForm.ShowDialog();
+        }
     }
 }

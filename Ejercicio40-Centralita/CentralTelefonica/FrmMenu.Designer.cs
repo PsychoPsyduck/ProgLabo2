@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGenerarLl = new System.Windows.Forms.Button();
+            this.btnGenerarLlamada = new System.Windows.Forms.Button();
             this.btnFactTotal = new System.Windows.Forms.Button();
             this.btnFacturacionLocal = new System.Windows.Forms.Button();
             this.btnFacturacionProv = new System.Windows.Forms.Button();
             this.Salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnGenerarLl
+            // btnGenerarLlamada
             // 
-            this.btnGenerarLl.Location = new System.Drawing.Point(12, 24);
-            this.btnGenerarLl.Name = "btnGenerarLl";
-            this.btnGenerarLl.Size = new System.Drawing.Size(301, 55);
-            this.btnGenerarLl.TabIndex = 0;
-            this.btnGenerarLl.Text = "Generar Llamada";
-            this.btnGenerarLl.UseVisualStyleBackColor = true;
-            this.btnGenerarLl.Click += new System.EventHandler(this.button1_Click);
+            this.btnGenerarLlamada.Location = new System.Drawing.Point(12, 24);
+            this.btnGenerarLlamada.Name = "btnGenerarLlamada";
+            this.btnGenerarLlamada.Size = new System.Drawing.Size(301, 55);
+            this.btnGenerarLlamada.TabIndex = 0;
+            this.btnGenerarLlamada.Text = "Generar Llamada";
+            this.btnGenerarLlamada.UseVisualStyleBackColor = true;
+            this.btnGenerarLlamada.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnFactTotal
             // 
@@ -81,7 +81,7 @@
             this.Salir.Text = "Salir";
             this.Salir.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,8 +90,8 @@
             this.Controls.Add(this.btnFacturacionProv);
             this.Controls.Add(this.btnFacturacionLocal);
             this.Controls.Add(this.btnFactTotal);
-            this.Controls.Add(this.btnGenerarLl);
-            this.Name = "Form1";
+            this.Controls.Add(this.btnGenerarLlamada);
+            this.Name = "FrmMenu";
             this.Text = "Central Telefonica";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -100,7 +100,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnGenerarLl;
+        private System.Windows.Forms.Button btnGenerarLlamada;
         private System.Windows.Forms.Button btnFactTotal;
         private System.Windows.Forms.Button btnFacturacionLocal;
         private System.Windows.Forms.Button btnFacturacionProv;
