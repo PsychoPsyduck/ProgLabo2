@@ -97,9 +97,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CentralitaHerencia\CentralitaAbstraPolimor.csproj">
+    <ProjectReference Include="..\CentralitaHerencia\CentralitaException.csproj">
       <Project>{cd2ff03e-eeae-4b39-8a69-2488ca63f9ec}</Project>
-      <Name>CentralitaAbstraPolimor</Name>
+      <Name>CentralitaException</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
