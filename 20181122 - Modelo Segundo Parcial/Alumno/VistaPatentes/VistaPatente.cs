@@ -20,6 +20,8 @@ namespace Patentes
 
     public partial class VistaPatente : UserControl
     {
+        public event FinExposicionPatente finExposicion;
+
         public VistaPatente()
         {
             InitializeComponent();
@@ -43,6 +45,7 @@ namespace Patentes
 
                     // Agregar evento de que finalizó la exposición de la patente
                     // ALUMNO
+                    finExposicion(this);
                 }
                 catch (Exception) { }
             }
@@ -52,7 +55,5 @@ namespace Patentes
                 lblPatenteNro.Text = patente.ToString();
             }
         }
-
-        public event FinExposicionPatente finExposicion;
     }
 }

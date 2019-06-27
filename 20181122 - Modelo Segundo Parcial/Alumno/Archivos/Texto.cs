@@ -13,22 +13,28 @@ namespace Archivos
     {
         public void Guardar(string archivo, Queue<Patente> datos)
         {
-            StreamWriter sw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + archivo);
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + archivo;
 
+            StreamWriter sw = new StreamWriter(path, true);
+            //try
             foreach (var d in datos)
             {
                 sw.WriteLine(d.ToString());
             }
+            //catch
+            //Finally
             sw.Close();
         }
 
         public void Leer(string archivo, out Queue<Patente> datos)
         {
             datos = new Queue<Patente>();
+            StreamReader sr = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + archivo);
             try
             {
-                StreamReader sr = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + archivo);
+                
                 //Hacer que lea todas las lineas.
+                //while(endoffile?)
                 Patente p = new Patente();
                 p.CodigoPatente = sr.ReadLine();
                 datos.Enqueue(p);
@@ -36,6 +42,10 @@ namespace Archivos
             catch (FileNotFoundException)
             {
                 throw new FileNotFoundException("No se encontro archivo");
+            }
+            finally
+            {
+                sr.Close();
             }
         }
     }
