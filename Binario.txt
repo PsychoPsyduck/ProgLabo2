@@ -1,0 +1,19 @@
+[Serializable]
+Persona
+
+private static void Serializar(List<Persona> pListaPersona)
+{
+	FileStream _fs = new FileStream(@"..\..\Carpeta\datos.dat", FileMode.Create);
+	BinaryFormatter _formatter = new BinaryFormatter();
+	_formatter.Serialize(_fs, pListaPersona);
+	_fs.Close();
+}
+
+private static List<Persona> Deserializar(string pArchivo)
+{
+	FileStream _fs = new FileStream(pArchivo, FileMode.Open);
+	BinaryFormatter _formatter = new BinaryFormatter();
+	List<Persona> _persona = _formatter.Deserialize(_fs) as List<Persona>;
+	_fs.Close();
+	return _persona;
+}
