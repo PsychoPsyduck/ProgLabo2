@@ -17,3 +17,9 @@ private static List<Persona> Deserializar(string pArchivo)
 	_fs.Close();
 	return _persona;
 }
+
+TP4
+-Entidades
+--Correo (threads ciclovida)
+-Paquete
+--Evento (cicloVida)
